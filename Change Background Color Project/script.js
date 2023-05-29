@@ -1,5 +1,6 @@
 const buttonEl = document.getElementById("change-Bg-Btn");
 const title = document.getElementById("title")
+//target the body backgound color - { document.body.sytle.background }
 const bodyBackgroundColor = document.body.style.background;
 
 //colors with color hexcode...
@@ -21,18 +22,21 @@ const africanViolet = "#B284BE";
 const wisteria = "#C9A0DC";
 const salmonPink = "#FF91A4";
 
+//insert the all the colors into the array colorArray //
 const colorArray = [rose, peach, beige, icterine, vanilla, malachite, mint, persianGreen, robinEggBlue, turquise, processCyan, babyBlue, comboliaBlue, tuftsBlue, africanViolet, wisteria, salmonPink];
 
+//targeted the colorArray length for the fuction created just bellow it to get random indexes with Math.random() 
 const colorArrayLength = colorArray.length;
-console.log(colorArrayLength)
 
 buttonEl.addEventListener("click", function(){
-    const chooseRandomIndex = Math.floor(Math.random() * colorArrayLength);
-    const changeColor = colorArray[chooseRandomIndex];
+    const chooseRandomIndex = Math.floor(Math.random() * colorArrayLength); // gets the random index less then the colorArray length 
+    const changeColor = colorArray[chooseRandomIndex]; //gets the value for of the color
+    //used a function the change the color of html body background color where we have took a parameter/argument {changeColor}
     changeBodyBackgroundColor(changeColor)
 
 })
 
+//function for change html background color
 function changeBodyBackgroundColor(color){
     document.body.style.background = color;
 }
