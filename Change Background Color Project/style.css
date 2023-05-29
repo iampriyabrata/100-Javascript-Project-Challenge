@@ -2,8 +2,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(27, 109, 136);
+    background-color: rgb(110, 210, 243);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: none;
 }
 /*h1 element for the title - Change Background Color Project*/
 h1{
@@ -27,6 +28,7 @@ div{
     text-transform: uppercase;
     font-weight: bold;
     font-size: large;
+    cursor: pointer;
 }
 #change-Bg-Btn:hover{
     background-color: #8d99ae;
