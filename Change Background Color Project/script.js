@@ -1,6 +1,6 @@
 const buttonEl = document.getElementById("change-Bg-Btn");
-
-const colorArray = [rose, peach, beige, icterine, vanilla, malachite, mint, persianGreen, robinEggBlue, turquise, processCyan, babyBlue, comboliaBlue, tuftsBlue, africanViolet, wisteria, salmonPink]
+const title = document.getElementById("title")
+const bodyBackgroundColor = document.body.style.background;
 
 //colors with color hexcode...
 const rose = "#FF0080";
@@ -21,6 +21,18 @@ const africanViolet = "#B284BE";
 const wisteria = "#C9A0DC";
 const salmonPink = "#FF91A4";
 
+const colorArray = [rose, peach, beige, icterine, vanilla, malachite, mint, persianGreen, robinEggBlue, turquise, processCyan, babyBlue, comboliaBlue, tuftsBlue, africanViolet, wisteria, salmonPink];
+
+const colorArrayLength = colorArray.length;
+console.log(colorArrayLength)
+
 buttonEl.addEventListener("click", function(){
-    alert("clicked!")
+    const chooseRandomIndex = Math.floor(Math.random() * colorArrayLength);
+    const changeColor = colorArray[chooseRandomIndex];
+    changeBodyBackgroundColor(changeColor)
+
 })
+
+function changeBodyBackgroundColor(color){
+    document.body.style.background = color;
+}
