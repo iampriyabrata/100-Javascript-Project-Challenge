@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Stone, Paper, Scissor</h1>
+    <p>---- Game ----</p>
+    <div id="game-area">
+        <div id="start-interface">
+            <p>✊ ✋ ✌</p>
+            <butto id="start-button">Start</button>
+        </div>
+
+        <div id="select-bet">
+            <p id="select-text">CHOOSE YOUR BET</p>
+            <div id="bet-container">
+                <P id="stone" class="bet">✊</P>
+                <P id="paper" class="bet">✋</P>
+                <P id="scissor" class="bet">✌</P>
+            </div>
+        </div>
+
+        <div id="showdown">
+            <div id="game-onplay">
+                <p class="player">Computer</p>
+                <p id="player-computer"></p>
+            </div>
+            <p id="vs">vs</p>
+            <div id="game-onplay">
+                <p id="player-you"></p>
+                <p class="player">You <span id="win">win</span><span id="loose">loose</span><span id="tie">-its a tie</span></p>
+            </div>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

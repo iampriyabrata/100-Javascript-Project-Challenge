@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    user-select: none;
+}
+
+body{
+    padding: 20px 0px;
+    background-color: #00bbf9;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#game-area{
+    margin: 20px 0px;
+    width: 300px;
+    height: 290px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+
+/*  -------------   GAME STARTS HERE -------------*/
+#start-interface{
+    position:absolute;
+    display: grid;
+    place-items: center;
+}
+
+#start-interface p{
+    font-size: 1.5rem;
+}
+
+#start-button{
+    border: 1px yellow;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0px 10px;
+    color: #0084d1;
+    background-color: #faf623;
+    border-radius: 7px;
+    font-style: italic;
+    box-shadow: none;
+    font-weight: 900;
+    user-select: none;
+}
+
+/*  ------------- CHOOSING BET STARTS HERE -------------*/
+
+#select-bet{
+    visibility: hidden;
+    margin: 2px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(6, 98, 110);
+    width: 270px;
+    height: 240px;
+    position: absolute;
+}
+
+#select-text{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+#bet-container{
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
+
+.bet{
+    font-size: 1.4rem;
+}
+.bet:hover{
+    font-size: 2rem;
+    position: relative;
+}
+
+/*  ------------- SHOWDOWN STARTS HERE -------------*/
+#showdown{
+    visibility: hidden;
+    display: grid;
+    place-items: center;
+}
+
+#vs{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#game-onplay{
+    font-size: 1rem;
+    display: grid;
+    place-items: center;
+    
+}
+
+.player{
+    color: #3c6e71;
+    font-style: italic;
+    font-family:sans-serif;
+    font-weight: 900;
+}
+
+#player-computer{
+    font-size: 3rem;
+    font-style: normal;
+}
+#player-you{
+    font-size: 3em;
+    font-style: normal;
+}
+
+#win{
+    display: none;
+    color: #ffbb00;
+}
+#loose{
+    display: none;
+    color: red;
+}
+#tie{
+    display: none;
+    color: rgb(84, 187, 255);
+}
+
+#play-again{
+    margin-top: 20px;
+    border: 1px yellow;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0px 10px;
+    color: #505050;
+    background-color: #949393;
+    font-style: italic;
+    box-shadow: none;
+    font-weight: 900;
+    user-select: none;
+}
